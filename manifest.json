@@ -9,5 +9,14 @@
     "icons": {
         "128": "logo.png"
     },
-    "permissions": ["webRequest", "webRequestBlocking", "http://*/", "https://*/"]
+    "declarative_net_request": {
+      "rule_resources": [
+        {
+          "id": "1",
+          "enabled": true,
+          "path": "blocker-rules.json"
+        }
+      ]
+    },
+    "permissions": ["declarativeNetRequest", "declarativeNetRequestFeedback"]
   }

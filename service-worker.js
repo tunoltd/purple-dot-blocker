@@ -2,9 +2,11 @@
 //
 // Licensed under MITLicense.
 
-// Blocks any requests from purpledotprice.com
-chrome.webRequest.onBeforeRequest.addListener(
-    function(details) { return {cancel: true}; },
-    {urls: ["*://*.purpledotprice.com/*"]},
-    ["blocking"]
-  );
+'use strict';
+
+chrome.declarativeNetRequest.onRuleMatchedDebug.addListener((e) => {
+  const msg = `Blocked network request to ${e.request.url} on tab ${e.request.tabId}.`;
+  console.log(msg);
+});
+
+console.log('Service worker started.');
