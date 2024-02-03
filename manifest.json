@@ -1,0 +1,13 @@
+{
+    "name": "Purple Dot Blocker",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Blocks Purple Dot Pre-Orders",
+    "background": {
+      "service_worker": "service-worker.js"
+    },
+    "icons": {
+        "128": "logo.png"
+    },
+    "permissions": ["webRequest", "webRequestBlocking", "http://*/", "https://*/"]
+  }

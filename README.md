@@ -1,2 +1,2 @@
-# purple-dot-toggle
-Toggle Purple Dot Pre-Orders
+# purple-dot-blockder
+Blocks Purple Dot Pre-Orders
